@@ -172,7 +172,7 @@ a {
     margin: auto;
   }
   .hero-section .hero-left-part .hero-dot img {
-    left: 4rem;
+    left: 3.3rem;
   }
   .hero-section .hero-left-part h1 {
     font-size: 30px;
@@ -403,7 +403,7 @@ a {
     width: 100%;
   }
   .features-section .feature-img img {
-    width: 49%;
+    width: 62%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -414,6 +414,9 @@ a {
         -ms-flex-align: center;
             align-items: center;
     margin: auto;
+  }
+  .features-section .feature-right-part {
+    width: 90% !important;
   }
   .features-section .feature-right-part .feat-items {
     width: 80%;
@@ -590,6 +593,9 @@ a {
 }
 
 @media (max-width: 768px) {
+  .jackpots-section {
+    margin-top: 4rem;
+  }
   .jackpots-section .first-div {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -600,14 +606,14 @@ a {
             flex-direction: column;
   }
   .jackpots-section .first-div .jackpots-left-part {
-    width: 45%;
+    width: 85%;
   }
   .jackpots-section .first-div .jackpots-left-part h1 {
     font-size: 2rem;
     text-align: center;
   }
   .jackpots-section .first-div .jackpots-right-part {
-    width: 45%;
+    width: 85%;
   }
   .jackpots-section .first-div .jackpots-right-part p {
     margin-top: 1.5rem;
@@ -624,6 +630,7 @@ a {
     text-align: center;
   }
   .jackpots-section .second-div .jackpots-items .jackpots-item-1 {
+    margin-bottom: 1.5rem;
     width: 50% !important;
   }
   .jackpots-section .second-div .jackpots-items .jackpots-item-1 .jackpots-item-text h4,
@@ -708,7 +715,23 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .integration-section .integration-text {
+    width: 85%;
+  }
+  .integration-section .integration-text h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+  .integration-section .integration-text p {
+    text-align: center;
   }
 }
 
@@ -919,13 +942,19 @@ a {
     margin-top: 4rem;
   }
   .awesome-section .awesome-items .awesome-item-img {
-    width: 42%;
+    width: 42% !important;
   }
 }
 
 @media (max-width: 768px) {
   .awesome-section {
     margin-top: 4rem;
+  }
+  .awesome-section .awesome-heading {
+    width: 90%;
+  }
+  .awesome-section .awesome-heading h1 {
+    font-size: 2rem;
   }
   .awesome-section .awesome-items .awesome-items-pt1,
   .awesome-section .awesome-items .awesome-items-pt2 {
@@ -963,7 +992,7 @@ a {
   .awesome-section .awesome-items .awesome-items-pt2 .awesome-item-4 .awesome-item-img,
   .awesome-section .awesome-items .awesome-items-pt2 .awesome-item-5 .awesome-item-img,
   .awesome-section .awesome-items .awesome-items-pt2 .awesome-item-6 .awesome-item-img {
-    width: 33%;
+    width: 47%;
   }
 }
 
@@ -1114,6 +1143,7 @@ a {
 
 @media (max-width: 768px) {
   .planning-section {
+    margin-top: 4rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1126,12 +1156,40 @@ a {
     width: 80%;
     margin: auto;
   }
+  .planning-section .planning-left-part .planning-items-pt1 {
+    width: 50%;
+  }
+  .planning-section .planning-left-part .planning-items-pt1 .planning-item-1 .planning-item-img, .planning-section .planning-left-part .planning-items-pt1 .planning-item-2 .planning-item-img {
+    width: 76%;
+  }
+  .planning-section .planning-left-part .planning-items-pt1 .planning-item-1 .planning-item-text h4, .planning-section .planning-left-part .planning-items-pt1 .planning-item-2 .planning-item-text h4 {
+    font-size: 1rem;
+  }
+  .planning-section .planning-left-part .planning-items-pt2 {
+    width: 50%;
+  }
+  .planning-section .planning-left-part .planning-items-pt2 .planning-item-3 .planning-item-img, .planning-section .planning-left-part .planning-items-pt2 .planning-item-4 .planning-item-img {
+    width: 97%;
+  }
+  .planning-section .planning-left-part .planning-items-pt2 .planning-item-3 .planning-item-text h4, .planning-section .planning-left-part .planning-items-pt2 .planning-item-4 .planning-item-text h4 {
+    font-size: 1rem;
+  }
+  .planning-section .planning-left-part .planning-heading {
+    width: 90%;
+  }
+  .planning-section .planning-left-part .planning-heading h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .planning-section .planning-left-part .planning-heading p {
+    text-align: center;
+  }
   .planning-section .planning-right-part {
     margin-top: 3rem;
     width: 100%;
   }
   .planning-section .planning-right-part img {
-    width: 50%;
+    width: 65%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1323,6 +1381,12 @@ a {
 }
 
 @media (max-width: 768px) {
+  .charge-section {
+    margin-top: 4rem;
+  }
+  .charge-section .charge-heading {
+    width: 95%;
+  }
   .charge-section .charge-cards {
     width: 100%;
     display: -webkit-box;
@@ -1333,33 +1397,51 @@ a {
             justify-content: space-between;
   }
   .charge-section .charge-cards .left-card {
-    width: 45%;
+    width: 50%;
     margin-left: 0;
     padding-bottom: 2rem;
   }
+  .charge-section .charge-cards .left-card .card-head .fir-pt {
+    font-size: 25px;
+  }
+  .charge-section .charge-cards .left-card .card-head .sec-pt {
+    font-size: 14px;
+  }
+  .charge-section .charge-cards .left-card .card-head h3 {
+    font-size: 20px;
+  }
   .charge-section .charge-cards .left-card button {
-    font-size: 16px;
-    line-height: 30px;
+    font-size: 10px;
+    line-height: 20px;
     color: #ffffff;
-    font-weight: 700;
+    font-weight: 500;
     background-color: blue;
     border-radius: 5rem;
-    padding: 0.3rem 1rem;
+    padding: 0.3rem 0.3rem;
     margin-left: 2rem;
   }
   .charge-section .charge-cards .right-card {
-    width: 45%;
+    width: 50%;
     margin-right: 0;
     padding-bottom: 2rem;
   }
+  .charge-section .charge-cards .right-card .card-head .fir-pt {
+    font-size: 25px;
+  }
+  .charge-section .charge-cards .right-card .card-head .sec-pt {
+    font-size: 14px;
+  }
+  .charge-section .charge-cards .right-card .card-head h3 {
+    font-size: 20px;
+  }
   .charge-section .charge-cards .right-card button {
-    font-size: 16px;
-    line-height: 30px;
+    font-size: 10px;
+    line-height: 20px;
     color: #ffffff;
-    font-weight: 700;
+    font-weight: 500;
     background-color: blue;
     border-radius: 5rem;
-    padding: 0.3rem 1rem;
+    padding: 0.3rem 0.3rem;
     margin-left: 2rem;
   }
 }
@@ -1494,16 +1576,27 @@ a {
             flex-direction: column;
   }
   .testimonials-section .testimonials-left-pt {
-    width: 65%;
+    width: 70%;
   }
   .testimonials-section .testimonials-left-pt img {
     width: 100%;
   }
   .testimonials-section .testimonials-right-pt {
-    width: 55%;
+    width: 90%;
   }
   .testimonials-section .testimonials-right-pt h1 {
     font-size: 28px;
+  }
+  .testimonials-section .testimonials-right-pt .testi-person .information {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .testimonials-section .testimonials-right-pt .testi-person .information .desc h6 {
+    font-size: 13px;
+  }
+  .testimonials-section .testimonials-right-pt .testi-person .information .desc p {
+    font-size: 11px;
   }
 }
 
@@ -1534,6 +1627,12 @@ a {
   background-color: rgba(128, 128, 128, 0.144);
   outline: 0 !important;
   border: 0 !important;
+}
+
+@media (max-width: 768px) {
+  .frequently-section .frequently-heading {
+    width: 90%;
+  }
 }
 
 .download-section {
@@ -1613,10 +1712,11 @@ a {
     width: 80%;
   }
   .download-section .download-right-pt img {
-    width: 75%;
+    width: 90%;
   }
   .download-section .download-left-pt {
     margin-top: 2rem;
+    width: 94%;
   }
   .download-section .download-apps {
     display: -webkit-box;
@@ -1710,5 +1810,12 @@ a {
 
 .footer-section .foot-heading .foot-copy-rights p {
   color: #616368;
+}
+
+@media (max-width: 768px) {
+  .footer-section .foot-heading .foot-copy-rights p {
+    font-size: 14px;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */

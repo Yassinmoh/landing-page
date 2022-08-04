@@ -182,7 +182,7 @@ $weight-700: 700;
 
             .hero-dot {
                 img {
-                    left: 4rem;
+                    left: 3.3rem;
                 }
             }
 
@@ -379,13 +379,14 @@ $weight-700: 700;
             width: 100%;
 
             img {
-                width: 49%;
+                width: 62%;
                 @include flex-center;
                 margin: auto;
             }
         }
 
         .feature-right-part {
+            width: 90% !important;
             .feat-items {
                 width: 80%;
                 display: block;
@@ -577,12 +578,13 @@ $weight-700: 700;
     }
 
     @include media ('<=phone') {
+        margin-top: 4rem;
         .first-div {
             display: flex;
             flex-direction: column;
 
             .jackpots-left-part {
-                width: 45%;
+                width: 85%;
 
                 h1 {
                     font-size: 2rem;
@@ -591,7 +593,7 @@ $weight-700: 700;
             }
 
             .jackpots-right-part {
-                width: 45%;
+                width: 85%;
 
                 p {
                     margin-top: 1.5rem;
@@ -607,6 +609,7 @@ $weight-700: 700;
                 text-align: center;
 
                 .jackpots-item-1 {
+                    margin-bottom: 1.5rem;
                     width: 50% !important;
 
                     .jackpots-item-text {
@@ -686,9 +689,21 @@ $weight-700: 700;
 
             img {
                 width: 65%;
-                display: flex;
-                justify-content: center;
+                @include flex-center;
                 margin: auto;
+            }
+        }
+    }
+    @include media ('<=phone') {
+
+        .integration-text {
+            width: 85%;
+            h1{
+                font-size:32px;
+                text-align: center;
+            }
+            p{
+                text-align: center;
             }
         }
     }
@@ -889,16 +904,20 @@ $weight-700: 700;
 
         .awesome-items {
             .awesome-item-img {
-                width: 42%;
+                width: 42% !important;
             }
         }
     }
 
     @include media ('<=phone') {
         margin-top: 4rem;
-
+        .awesome-heading{
+            width: 90%;
+            h1{
+                font-size: 2rem;
+            }
+        }
         .awesome-items {
-
             .awesome-items-pt1,
             .awesome-items-pt2 {
                 display: flex;
@@ -913,7 +932,7 @@ $weight-700: 700;
                     width: 55% !important;
 
                     .awesome-item-img {
-                        width: 33%;
+                        width: 47%;
                     }
                 }
             }
@@ -1057,12 +1076,50 @@ $weight-700: 700;
     }
 
     @include media ('<=phone') {
+        margin-top: 4rem;
         display: flex;
         flex-direction: column;
 
         .planning-left-part {
             width: 80%;
             margin: auto;
+            .planning-items-pt1{
+                width:50%;
+                .planning-item-1,.planning-item-2{
+                    .planning-item-img{
+                        width: 76%;
+                    }
+                    .planning-item-text{
+                        h4{
+                            font-size:1rem;
+                        }
+                    }
+                }
+            }
+            .planning-items-pt2{
+                width:50%;
+                // margin-top: 1rem;
+                .planning-item-3,.planning-item-4{
+                    .planning-item-img{
+                        width: 97%;
+                    }
+                    .planning-item-text{
+                        h4{
+                            font-size:1rem;
+                        }
+                    }
+                }
+            }
+            .planning-heading{
+                width: 90%;
+                h1{
+                    font-size:2rem;
+                    text-align: center;
+                }
+                p{
+                    text-align: center;
+                }
+            }
         }
 
         .planning-right-part {
@@ -1070,7 +1127,7 @@ $weight-700: 700;
             width: 100%;
 
             img {
-                width: 50%;
+                width: 65%;
                 @include flex-center;
                 margin: auto;
             }
@@ -1236,41 +1293,65 @@ $weight-700: 700;
     }
 
     @include media ('<=phone') {
+        margin-top: 4rem;
+        .charge-heading{
+            width: 95%;
+        }
         .charge-cards {
             width: 100%;
             display: flex;
             justify-content: space-between;
 
             .left-card {
-                width: 45%;
+                width: 50%;
                 margin-left: 0;
                 padding-bottom: 2rem;
-
+                .card-head{
+                    .fir-pt{
+                        font-size: 25px;
+                    }
+                    .sec-pt{
+                        font-size: 14px;
+                    }
+                    h3{
+                        font-size: 20px;
+                    }
+                }
                 button {
-                    font-size: 16px;
-                    line-height: 30px;
+                    font-size: 10px;
+                    line-height: 20px;
                     color: #ffffff;
-                    font-weight: $weight-700;
+                    font-weight: 500;
                     background-color: blue;
                     border-radius: 5rem;
-                    padding: 0.3rem 1rem;
+                    padding: 0.3rem 0.3rem;
                     margin-left: 2rem;
                 }
             }
 
             .right-card {
-                width: 45%;
+                width: 50%;
                 margin-right: 0;
                 padding-bottom: 2rem;
-
+                .card-head{
+                    .fir-pt{
+                        font-size: 25px;
+                    }
+                    .sec-pt{
+                        font-size: 14px;
+                    }
+                    h3{
+                        font-size: 20px;
+                    }
+                }
                 button {
-                    font-size: 16px;
-                    line-height: 30px;
+                    font-size: 10px;
+                    line-height: 20px;
                     color: #ffffff;
-                    font-weight: $weight-700;
+                    font-weight: 500;
                     background-color: blue;
                     border-radius: 5rem;
-                    padding: 0.3rem 1rem;
+                    padding: 0.3rem 0.3rem;
                     margin-left: 2rem;
                 }
             }
@@ -1391,7 +1472,7 @@ $weight-700: 700;
         flex-direction: column;
 
         .testimonials-left-pt {
-            width: 65%;
+            width: 70%;
 
             img {
                 width: 100%;
@@ -1399,13 +1480,27 @@ $weight-700: 700;
         }
 
         .testimonials-right-pt {
-            width: 55%;
+            width: 90%;
 
             h1 {
                 font-size: 28px;
             }
+            .testi-person{
+                .information{
+                    justify-content:space-between;
+                    .desc{
+                        h6{
+                            font-size: 13px;
+                        }
+                        p{
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
         }
     }
+
 }
 
 // End Testimonials Style
@@ -1441,6 +1536,11 @@ $weight-700: 700;
                     border: 0 !important;
                 }
             }
+        }
+    }
+    @include media ('<=phone'){
+        .frequently-heading{
+            width: 90%;
         }
     }
 }
@@ -1499,12 +1599,13 @@ $weight-700: 700;
             width: 80%;
 
             img {
-                width: 75%;
+                width: 90%;
             }
         }
 
         .download-left-pt {
             margin-top: 2rem;
+            width: 94%;
         }
 
         margin-top: 5rem;
@@ -1587,6 +1688,17 @@ $weight-700: 700;
                 color: $secondry-color;
             }
         }
+    }
+    @include media ('<=phone'){
+        .foot-heading{
+            .foot-copy-rights {
+                p{
+                    font-size: 14px;
+                    text-align: center;
+                }
+            }
+        }
+        
     }
 }
 

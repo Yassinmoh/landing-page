@@ -1392,12 +1392,13 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .charge-section .charge-cards .left-card {
-    width: 50%;
+    width: 57%;
     margin-left: 0;
     padding-bottom: 2rem;
   }
@@ -1421,7 +1422,8 @@ a {
     margin-left: 2rem;
   }
   .charge-section .charge-cards .right-card {
-    width: 50%;
+    width: 57%;
+    margin-top: 2rem;
     margin-right: 0;
     padding-bottom: 2rem;
   }
@@ -1463,6 +1465,25 @@ a {
   }
   .charge-section .charge-cards .right-card {
     width: 35%;
+    margin-right: 0;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .charge-section .charge-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .charge-section .charge-cards .left-card {
+    width: 57%;
+    margin-left: 0;
+    padding-bottom: 2rem;
+  }
+  .charge-section .charge-cards .right-card {
+    margin-top: 2rem;
+    width: 57%;
     margin-right: 0;
     padding-bottom: 2rem;
   }

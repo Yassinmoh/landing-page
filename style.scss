@@ -1199,7 +1199,6 @@ $weight-700: 700;
         width: 70%;
         margin: auto;
         @include flex-around;
-
         .left-card {
             width: 33%;
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -1299,10 +1298,10 @@ $weight-700: 700;
         .charge-cards {
             width: 100%;
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
 
             .left-card {
-                width: 50%;
+                width: 57%;
                 margin-left: 0;
                 padding-bottom: 2rem;
                 .card-head{
@@ -1329,7 +1328,8 @@ $weight-700: 700;
             }
 
             .right-card {
-                width: 50%;
+                width: 57%;
+                margin-top: 2rem;
                 margin-right: 0;
                 padding-bottom: 2rem;
                 .card-head{
@@ -1372,6 +1372,24 @@ $weight-700: 700;
 
             .right-card {
                 width: 35%;
+                margin-right: 0;
+                padding-bottom: 2rem;
+            }
+        }
+    }
+    @include media ('<=phone'){
+        .charge-cards{
+            display: flex;
+            
+            .left-card {
+                width: 57%;
+                margin-left: 0;
+                padding-bottom: 2rem;
+            }
+
+            .right-card {
+                margin-top: 2rem;
+                width: 57%;
                 margin-right: 0;
                 padding-bottom: 2rem;
             }
